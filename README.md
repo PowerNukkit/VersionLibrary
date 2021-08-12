@@ -12,7 +12,7 @@ Just add it as dependency in your **pom.xml**
     <dependency>
         <group>org.powernukkit</group>
         <artifact>version-library</artifact>
-        <version>0.1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```
@@ -34,7 +34,7 @@ Just add it as dependency in your **build.gradle** file
 
 ```groovy
 dependencies {
-    implementation 'org.powernukkit:version-library:0.1.0-SNAPSHOT'
+    implementation 'org.powernukkit:version-library:1.0.0'
 }
 ```
 

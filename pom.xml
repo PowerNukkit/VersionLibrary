@@ -6,11 +6,12 @@
 
     <groupId>org.powernukkit</groupId>
     <artifactId>version-library</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     
     <name>Version Library</name>
     <description>A simple library that implement a smart version comparision, accepting various version formats</description>
+    <url>https://github.com/PowerNukkit/VersionLibrary</url>
     
     <inceptionYear>2020</inceptionYear>
     <organization>
@@ -57,7 +58,7 @@
         <repository>
             <id>powernukkit-releases</id>
             <name>powernukkit-releases</name>
-            <url>https://api.bintray.com/maven/powernukkit/powernukkit/PowerNukkit</url>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
         <snapshotRepository>
             <id>powernukkit-snapshots</id>
@@ -166,6 +167,20 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>3.0.0-M1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
